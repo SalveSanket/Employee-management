@@ -58,8 +58,9 @@ terraform.rc
 *.retry
 .vault_pass*
 
-# ---------- Local project notes (not part of the project) ----------
+# ---------- Local-only files (notes, local dev and test scripts) ----------
 docs/
+scripts/
 *.pdf
 
 # ---------- Editor and AI tool settings ----------
