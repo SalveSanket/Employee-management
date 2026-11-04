@@ -1,0 +1,13 @@
+# Not copied into the backend image
+node_modules
+npm-debug.log*
+
+# Secrets: passed at run time, never baked into the image
+*.env
+.env*
+
+# Docker and Git files
+Dockerfile
+.dockerignore
+.git
+.gitignore

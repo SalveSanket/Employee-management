@@ -1,0 +1,14 @@
+# Not copied into the build stage
+node_modules
+dist
+npm-debug.log*
+
+# Secrets
+*.env
+.env*
+
+# Docker and Git files
+Dockerfile
+.dockerignore
+.git
+.gitignore
