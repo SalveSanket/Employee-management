@@ -40,6 +40,8 @@ pnpm-debug.log*
 
 # ---------- Terraform ----------
 **/.terraform/
+**/.manage*.log
+**/.manage.tfplan
 *.tfstate
 *.tfstate.*
 *.tfvars
