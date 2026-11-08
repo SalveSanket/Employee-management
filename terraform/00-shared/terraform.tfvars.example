@@ -1,0 +1,9 @@
+# Optional: copy to terraform.tfvars and change values.
+# terraform.tfvars is ignored by Git. All values below are already the defaults.
+
+aws_region         = "ap-south-1"
+project            = "emp"
+vpc_cidr           = "10.0.0.0/16"
+public_subnet_cidr = "10.0.1.0/24"
+# availability_zone = "ap-south-1a"
+login_key_path = "~/.ssh/emp-project.pem"
