@@ -1,0 +1,18 @@
+# Optional: copy to terraform.tfvars (ignored by Git) and change values.
+#   cp terraform.tfvars.example terraform.tfvars
+# Every value below is optional; the defaults are shown.
+
+# aws_region         = "ap-south-1"
+# project            = "emp"
+# instance_type      = "t2.micro"
+# root_volume_size   = 10
+# timezone           = "Asia/Kolkata"
+# node_major_version = 22
+# repo_url           = "https://github.com/SalveSanket/Employee-management.git"
+
+# SSH allowed from: null = your current IP, detected automatically
+# admin_cidr = "203.0.113.10/32"
+
+# Git identity for commits made on dev1
+# git_user_name  = "Your Name"
+# git_user_email = "you@example.com"

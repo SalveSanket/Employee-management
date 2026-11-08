@@ -59,8 +59,8 @@ terraform.rc
 .vault_pass*
 
 # ---------- Local-only files (notes, local dev and test scripts) ----------
-docs/
-scripts/
+/docs/
+/scripts/
 *.pdf
 
 # ---------- Editor and AI tool settings ----------
