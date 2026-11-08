@@ -45,7 +45,7 @@ terraform apply
 ssh -i ~/.ssh/emp-project.pem ec2-user@<public_ip>
 
 # On docker-node1
-cloud-init status --wait
+sudo cloud-init status --wait
 cat /var/log/bootstrap-complete
 docker --version && systemctl is-active docker && systemctl is-enabled docker
 id itadmin
@@ -65,7 +65,7 @@ Add the Elastic IP (`terraform output public_ip`) in Atlas > Security > Network 
 |---|---|
 | `no matching EC2 VPC found` | Apply `00-shared` first |
 | `ssh: connect ... timed out` | Your IP changed; run `terraform apply` again (only the rule is updated) |
-| `docker: command not found` right after boot | The install is still running: `cloud-init status --wait` |
+| `docker: command not found` right after boot | The install is still running: `sudo cloud-init status --wait` |
 | Install failed | `sudo cat /var/log/bootstrap.log` |
 
 ## Destroy

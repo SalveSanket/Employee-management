@@ -44,5 +44,5 @@ output "deploy_user" {
 
 output "bootstrap_check_command" {
   description = "Run on docker-node1 to confirm the install script finished."
-  value       = "cloud-init status --wait && cat /var/log/bootstrap-complete"
+  value       = "sudo cloud-init status --wait && cat /var/log/bootstrap-complete"
 }

@@ -52,7 +52,7 @@ terraform apply
 ssh -i ~/.ssh/emp-project.pem ec2-user@<public_ip>
 
 # On the ansible server
-cloud-init status --wait
+sudo cloud-init status --wait
 cat /var/log/bootstrap-complete          # ansible_ping=ok expected
 sudo su - itadmin
 ansible docker -m ping                   # docker-node1 | SUCCESS => "ping": "pong"

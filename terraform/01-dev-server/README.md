@@ -53,7 +53,7 @@ terraform apply
 ssh -i ~/.ssh/emp-project.pem ec2-user@<public_ip>
 
 # On dev1: wait for the install script, then show the result
-cloud-init status --wait
+sudo cloud-init status --wait
 cat /var/log/bootstrap-complete
 git --version && node -v && npm -v && hostname && ls /devpro1
 ```
@@ -71,7 +71,7 @@ Your SSH rule is your IP at the time of `terraform apply`. If your IP changes (m
 | `no matching EC2 VPC found` | Apply `00-shared` first |
 | `ssh: connect ... timed out` | Your IP changed; run `terraform apply` again |
 | `Permission denied (publickey)` | Use `-i ~/.ssh/emp-project.pem` and user `ec2-user` |
-| `node: command not found` right after boot | The install is still running: `cloud-init status --wait` |
+| `node: command not found` right after boot | The install is still running: `sudo cloud-init status --wait` |
 | Install failed | `sudo cat /var/log/bootstrap.log` (or `/var/log/cloud-init-output.log`) |
 
 ## Destroy
