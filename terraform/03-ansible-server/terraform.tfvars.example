@@ -1,0 +1,16 @@
+# Optional: copy to terraform.tfvars (ignored by Git) and change values.
+#   cp terraform.tfvars.example terraform.tfvars
+# Every value below is optional; the defaults are shown.
+
+# aws_region         = "ap-south-1"
+# project            = "emp"
+# instance_type      = "t2.micro"
+# root_volume_size   = 10
+# timezone           = "Asia/Kolkata"
+# deploy_user        = "itadmin"
+# docker_server_name = "docker-node1"
+# project_dir        = "/opt/project"
+# staging_dir        = "/opt/docker"
+
+# SSH allowed from: null = your current IP, detected automatically
+# admin_cidr = "203.0.113.10/32"
