@@ -1,0 +1,17 @@
+# Optional: copy to terraform.tfvars (ignored by Git) and change values.
+#   cp terraform.tfvars.example terraform.tfvars
+# Every value below is optional; the defaults are shown.
+
+# aws_region       = "ap-south-1"
+# project          = "emp"
+# instance_type    = "t2.micro"
+# root_volume_size = 15
+# timezone         = "Asia/Kolkata"
+# deploy_user      = "itadmin"
+# app_dir          = "/opt/docker"
+
+# Who may open the website (port 80)
+# web_cidr = "0.0.0.0/0"
+
+# SSH allowed from: null = your current IP, detected automatically
+# admin_cidr = "203.0.113.10/32"
